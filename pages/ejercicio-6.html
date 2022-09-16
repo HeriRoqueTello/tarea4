@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <form onsubmit="setPresupuesto();return false" class="form">
+          <h1 class="title form-title noselect">hospital</h1>
+          <label for="base-salary" class="label">Presupuesto anual:</label>
+          <input type="number" step="any" min="0" id="base-salary" class="form-input" value="0" required />
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column">
+            <p class="label label-result" id="base-salary-text" hidden></p>
+            <p class="label label-result" id="ginecologia-text" hidden></p>
+            <p class="label label-result" id="traumatologia-text" hidden></p>
+            <p class="label label-result" id="pediatria-text" hidden></p>
+          </div>
+          <input type="submit" class="btn btn-primary" id="total" value="Total" />
+          <input type="button" onclick="clearInput()" class="btn btn-primary" id="clear" value="Limpiar" hidden />
+        </form>
+      </div>
+    </section>
+    <script src="../js/6.js"></script>
+  </body>
+</html>

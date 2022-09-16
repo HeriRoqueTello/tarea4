@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <form onsubmit="setPerimetro();return false" class="form">
+          <h1 class="title form-title noselect">circunferencia</h1>
+          <label for="radio" class="label">Radio:</label>
+          <input type="number" id="radio" class="form-input" required />
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column">
+            <p class="label label-result" id="radio-text" hidden></p>
+            <p class="label label-result" id="perimetro-text" hidden></p>
+          </div>
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column">
+            <p class="label label-result" id="radio-50-text" hidden></p>
+            <p class="label label-result" id="perimetro-50-text" hidden></p>
+          </div>
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column">
+            <p class="label label-result" id="radio-50-25-text" hidden></p>
+            <p class="label label-result" id="perimetro-50-25-text" hidden></p>
+          </div>
+          <input type="submit" class="btn btn-primary" id="perimetro" value="Perímetro" />
+          <input type="button" onclick="clearInput()" class="btn btn-primary" id="clear" value="Limpiar" hidden />
+        </form>
+      </div>
+    </section>
+    <script src="../js/2.js"></script>
+  </body>
+</html>

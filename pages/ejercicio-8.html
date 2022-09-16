@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <form onsubmit="setAscend();return false" class="form">
+          <h1 class="title form-title noselect">Numeros</h1>
+          <label for="number1" class="label">Ingresar primer número:</label>
+          <input type="number" step="any" id="number1" class="form-input" value="0" required />
+          <label for="number2" class="label">Ingresar segundo número:</label>
+          <input type="number" step="any" id="number2" class="form-input" value="0" required />
+          <label for="number3" class="label">Ingresar tercer número:</label>
+          <input type="number" step="any" id="number3" class="form-input" value="0" required />
+          <label for="number4" class="label">Ingresar cuarto número:</label>
+          <input type="number" step="any" id="number4" class="form-input" value="0" required />
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column">
+            <p class="label label-result" id="first-text" hidden></p>
+            <p class="label label-result" id="second-text" hidden></p>
+            <p class="label label-result" id="media-text" hidden></p>
+          </div>
+          <input type="submit" class="btn btn-primary" id="total" value="Go!" />
+          <input type="button" onclick="clearInput()" class="btn btn-primary" id="clear" value="Limpiar" hidden />
+        </form>
+      </div>
+    </section>
+    <script src="../js/8.js"></script>
+  </body>
+</html>

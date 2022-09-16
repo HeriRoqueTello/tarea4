@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <form onsubmit="setSalary();return false" class="form">
+          <h1 class="title form-title noselect">Sueldo</h1>
+          <label for="employee" class="label">Empleado:</label>
+          <input type="text" id="employee" class="form-input" placeholder="Nombre completo" required />
+          <label for="hours" class="label">Horas trabajadas:</label>
+          <input type="number" id="hours" class="form-input" min="0" value="0" required />
+          <label for="rate" class="label">Tarifa por hora:</label>
+          <input type="number" id="rate" class="form-input" step="any" min="0" value="0" required />
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column; align-content: space-around">
+            <p class="label label-result" id="employee-text" hidden></p>
+            <p class="label label-result" id="salary-text" hidden></p>
+            <p class="label label-result" id="salary-80-text" hidden></p>
+            <p class="label label-result" id="salary-60-text" hidden></p>
+            <p class="label label-result" id="salary-30-text" hidden></p>
+            <p class="label label-result" id="salary-10-text" hidden></p>
+          </div>
+          <input type="submit" class="btn btn-primary" id="salary" value="Sueldo" />
+          <input type="button" onclick="clearInput()" class="btn btn-primary" id="clear" value="Limpiar" hidden />
+        </form>
+      </div>
+    </section>
+    <script src="../js/3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cuadrado-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.cuadrado {
+  width: 150px;
+  height: 150px;
+}
+.border-bottom {
+  border-bottom: #f00 4px solid;
+}
+.border-top {
+  border-top: #f00 4px solid;
+}
+.border-right {
+  border-right: #f00 4px solid;
+}
+.border-left {
+  border-left: #f00 4px solid;
+}
+.color1 {
+  background-color: #fff;
+}
+.color2 {
+  background-color: #000;
+}

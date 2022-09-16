@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <form onsubmit="setOrden();return false" class="form">
+          <h1 class="title form-title noselect">Enteros</h1>
+          <label for="number" id="number-label" class="label">Cuantos numeros ingresaras?</label>
+          <input type="number" id="number" class="form-input" min="0" value="0" required />
+          <div class="form" id="number-container"></div>
+          <hr hidden />
+          <div class="result-container" style="flex-direction: column; flex-wrap: wrap; align-content: center">
+            <p class="label label-result" id="numbers-text" hidden></p>
+          </div>
+          <input type="submit" class="btn btn-primary" id="orden" value="Ordenar" hidden />
+          <input type="button" onclick="setNumeros()" class="btn btn-primary" id="next" value="Siguiente" />
+          <input type="button" onclick="clearInput()" class="btn btn-primary" id="clear" value="Limpiar" hidden />
+        </form>
+      </div>
+    </section>
+    <script src="../js/9.js"></script>
+  </body>
+</html>

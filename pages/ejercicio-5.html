@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="../css/e5.css" />
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="container">
+        <h1 class="title form-title noselect">Algoritmos</h1>
+        <form class="form">
+          <label for="student" class="label margin">Alumno:</label>
+          <input type="text" id="student" class="form-input" placeholder="Nombre completo" required />
+        </form>
+        <span class="linea"></span>
+        <div class="units-container">
+          <h2 class="subtitle form-title noselect">Parciales</h2>
+          <form class="form parciales">
+            <label for="unit1-grade1" class="label">Nota 1:</label>
+            <input type="number" id="unit1-grade1" class="form-input" step="any" min="0" max="20" value="0" required />
+            <label for="unit1-grade2" class="label">Nota 2:</label>
+            <input type="number" id="unit1-grade2" class="form-input" step="any" min="0" max="20" value="0" required />
+            <label for="unit1-grade3" class="label">Nota 3:</label>
+            <input type="number" id="unit1-grade3" class="form-input" step="any" min="0" max="20" value="0" required />
+            <hr hidden />
+            <div class="result-container">
+              <p class="label label-result" id="unit1-text" hidden></p>
+            </div>
+          </form>
+          <h2 class="subtitle form-title noselect">Examen Final</h2>
+          <form class="form">
+            <label for="examen-final" class="label margin">Nota:</label>
+            <input type="number" id="examen-final" class="form-input" step="any" min="0" max="20" value="0" required />
+            <hr hidden />
+            <div class="result-container">
+              <p class="label label-result" id="examen-text" hidden></p>
+            </div>
+          </form>
+          <h2 class="subtitle form-title noselect">Trabajo Final</h2>
+          <form class="form">
+            <label for="trabajo-final" class="label margin">Nota:</label>
+            <input type="number" id="trabajo-final" class="form-input" step="any" min="0" max="20" value="0" required />
+            <hr hidden />
+            <div class="result-container">
+              <p class="label label-result" id="trabajo-text" hidden></p>
+            </div>
+          </form>
+        </div>
+        <hr hidden />
+        <div class="units-average">
+          <p class="label label-result" id="student-text" hidden></p>
+          <p class="label label-result" id="units-average-text" hidden></p>
+          <p class="label label-result" id="aprobacion-text" style="background: var(--dark); text-align: center" hidden></p>
+        </div>
+        <span class="linea"></span>
+        <div class="btn-container">
+          <button onclick="setAverage()" class="btn btn-primary" id="average">Promedio</button>
+          <button onclick="clearInput()" class="btn btn-primary" id="clear" hidden>Limpiar</button>
+        </div>
+      </div>
+    </section>
+    <script src="../js/5.js"></script>
+  </body>
+</html>
